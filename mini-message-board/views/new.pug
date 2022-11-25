@@ -1,0 +1,11 @@
+extends layout 
+
+block content
+  h1 New Message
+  form(method="POST" action="/new")
+    label Name
+    input(name="nameText" type="text")
+    label Message
+    input(name="messageText" type="text")
+    button(class="link") submit
+  a(href="/") back
